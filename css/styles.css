@@ -40,7 +40,7 @@ address {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  max-width: 768px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -109,8 +109,19 @@ h3 {
 }
 
 .text-bio {
-  width: 618px;
+  /* max-width: 450px; */
   font-size: 18px;
+}
+
+.cont-with-pic{
+  min-width: 150px;
+}
+
+.pic-bio {
+  border-radius: 50%;
+  box-shadow: 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .cont-address {
@@ -141,7 +152,7 @@ h3 {
 
 .bio-address {
   text-decoration: underline;
-  color: #15416d;
+  color: #4d5ae59c;
   margin-left: 4px;
 }
 
@@ -277,7 +288,7 @@ h3 {
 }
 
 .icon-char:hover {
-  fill: #280c56;
+  fill: #4D5AE5;
   ;
 }
 
@@ -315,6 +326,7 @@ th {
   color: rgb(209, 218, 250);
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 40px;
 }
 
 .contact-form {
@@ -343,6 +355,8 @@ th {
   width: 350px;
   height: 100%;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .contacts-textarea {
@@ -364,6 +378,10 @@ th {
 
 .contacts-textarea:focus {
   border-color: #4D5AE5;
+}
+
+.contacts-textarea:focus+.label-input {
+  color: #4D5AE5;
 }
 
 .contacts-textarea::placeholder {
@@ -390,6 +408,18 @@ th {
   border-color: #4D5AE5;
 }
 
+/* ----FIX contacts------------ */
+.fix-form {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* ---------------------------- */
+
+.contacts-input:focus+.label-input {
+  color: #4D5AE5;
+}
+
 .button-sub {
   border: none;
   border-radius: 4px;
@@ -398,6 +428,22 @@ th {
   color: #2E2F42;
   padding: 6px;
   width: 150px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-sub:hover {
+  background-color: #4D5AE5;
+  color: rgb(209, 218, 250);
 }
 
 /* ----------------------- */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+.text-bio {
+  max-width: 618px;
+}
+}

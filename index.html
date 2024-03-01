@@ -22,7 +22,7 @@
     <section class="bio">
       <div class="container bio-cont">
         <div class="cont-with-pic">
-          <img src="./images/john-doe.jpg" alt="John Doe" width="300">
+          <img src="./images/john-doe.jpg" alt="John Doe" width="300" class="pic-bio">
         </div>
 
         <div class="cont-with-info">
@@ -138,6 +138,30 @@
             </ul>
           </div>
         </div>
+
+
+        <h3 class="footer-title">Contact Me</h3>
+        <form class="contact-form">
+          <div class="input-text">
+            <div class="fix-form">
+              <input type="text" name="user-name" id="user-name" class="contacts-input">
+              <label for="user-name" class="label-input">Name:</label>
+            </div>
+
+            <div class="fix-form">
+              <input type="email" name="user-email" id="user-email" class="contacts-input">
+              <label for="user-email" class="label-input">Email:</label>
+            </div>
+          </div>
+
+          <div class="input-textarea">
+            <textarea name="user-message" id="user-message" class="contacts-textarea"
+              placeholder="Text input"></textarea>
+            <label for="user-message" class="label-input">Message:</label>
+          </div>
+
+          <button type="submit" class="button-sub">Send</button>
+        </form>
       </div>
     </section>
 
@@ -145,7 +169,7 @@
 
   <footer class="footer">
     <div class="container">
-      <h3 class="footer-title">Contact Me</h3>
+      <!-- <h3 class="footer-title">Contact Me</h3>
       <form class="contact-form">
         <div class="input-text">
           <div>
@@ -165,7 +189,7 @@
         </div>
 
         <button type="submit" class="button-sub">Send</button>
-      </form>
+      </form> -->
     </div>
   </footer>
 </body>
